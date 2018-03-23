@@ -21,7 +21,7 @@ Example of how to run this script from terminal:
 __author__ = 'Devin Dinwiddie'
 __contact__ = "devin-d.github.io"
 __version__ = '1.0'
-__copyright__ = """Copyright (C) 2017 Devin Dinwiddie.
+__copyright__ = """Copyright (C) 2018 Devin Dinwiddie.
    
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -219,7 +219,7 @@ class motif_Draw(object):
         global start
         for z in out:
             #print(z["intron1"])
-            motif_Draw.draw_inex(z["intron1"], z["exon"], z["intron2"], context, start)
+            motif_Draw.draw_inex(z["intron1"], z["exon"], z["intron2"], context, start) #draw the intron exon intron
 
             lpos = -20 #postion of legend 
             for x in z.items():
@@ -232,12 +232,12 @@ class motif_Draw(object):
                     gene = x[0].split(" ")[0][1:]
                     
                     if x[1]!=[]:
-                        color = motif_Draw.draw_motifs(x[1], context, start, motif)
-                        motif_Draw.draw_gene(start, gene)
-                        motif_Draw.draw_legend(color[0], color[1], color[2], start, lpos, motif)
-                        lpos = lpos + 10
+                        color = motif_Draw.draw_motifs(x[1], context, start, motif) #draw motif
+                        motif_Draw.draw_gene(start, gene) #put in gene name
+                        motif_Draw.draw_legend(color[0], color[1], color[2], start, lpos, motif) #put in legend (motif name colored same as motif)
+                        lpos = lpos + 10 #move down 
 
-            start = [start[0], start[1] + 100]
+            start = [start[0], start[1] + 100] # adjust stat pos
             
 def file_check(parser, arg):
     """ checks if input files exist"""
