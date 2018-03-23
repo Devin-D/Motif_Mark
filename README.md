@@ -13,7 +13,7 @@ How to use this tool:
  
 Example fasta header:
 
- >INSR chr19:7149896-7151209 (reverse complement)
+ ">INSR chr19:7149896-7151209 (reverse complement)"
 
 Example of how to run this script from terminal:
 
