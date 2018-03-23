@@ -3,7 +3,7 @@
 and postion information
 
 Requires (python 3+)
-
+Requires (pycairo)
 
 How to use this tool:
 - (Standard): User supplies Two input files,
