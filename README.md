@@ -8,8 +8,10 @@ How to use this tool:
 - (Standard): User supplies Two input files,
  1) A gene sequence  file in fasta format with exonic regions capitalized (see example fasta header for header format)
  2) A motif file with 1 motif per line no spaces
+ 
     *example files can be found on github*
- 3) specify -o flag with string for the name of the output graph *will be in .svg format*
+    
+  specify -o flag  for the name of the output graph *will be in .svg format*
  
 Example fasta header:
 
